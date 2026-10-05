@@ -1,5 +1,5 @@
-import type { Semester } from "./semester.interface.js";
-export declare const createSemesterService: (data: Semester) => Promise<import("mongoose").Document<unknown, {}, Semester, {}, import("mongoose").DefaultSchemaOptions> & Semester & {
+import type { SemesterType } from "./semester.interface.js";
+export declare const createSemesterService: (data: SemesterType) => Promise<import("mongoose").Document<unknown, {}, SemesterType, {}, import("mongoose").DefaultSchemaOptions> & SemesterType & {
     _id: import("mongoose").Types.ObjectId;
 } & {
     __v: number;

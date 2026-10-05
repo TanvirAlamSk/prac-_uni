@@ -1,1 +1,1 @@
-{"version":3,"file":"semester.model.d.ts","sourceRoot":"","sources":["../../../../src/app/modules/semesters/semester.model.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,QAAQ,EAAE,MAAM,yBAAyB,CAAC;AAwBxD,eAAO,MAAM,QAAQ;;;;;;iBAA8C,CAAC"}
+{"version":3,"file":"semester.model.d.ts","sourceRoot":"","sources":["../../../../src/app/modules/semesters/semester.model.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,YAAY,EAAE,MAAM,yBAAyB,CAAC;AAwB5D,eAAO,MAAM,QAAQ;;;;;;qBAAkD,CAAC"}

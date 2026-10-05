@@ -68,5 +68,5 @@ const studentSchema = new Schema({
         required: true,
     },
 });
-export const StudentModel = model("StudentModel", studentSchema);
+export const StudentModel = model("student", studentSchema);
 //# sourceMappingURL=student.schema.js.map

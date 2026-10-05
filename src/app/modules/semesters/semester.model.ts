@@ -1,7 +1,7 @@
 import { model, Schema } from "mongoose";
-import type { Semester } from "./semester.interface.js";
+import type { SemesterType } from "./semester.interface.js";
 
-const semesterSchema = new Schema<Semester>({
+const semesterSchema = new Schema<SemesterType>({
   name: {
     type: String,
     required: [true, "Semester name is required."],
@@ -23,4 +23,4 @@ const semesterSchema = new Schema<Semester>({
   },
 });
 
-export const semester = model<Semester>("semester", semesterSchema);
+export const Semester = model<SemesterType>("Semester", semesterSchema);

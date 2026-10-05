@@ -10,9 +10,10 @@ export const createSemesterControllar = async (req: Request, res: Response) => {
       data: result,
     });
   } catch (err) {
-    res.status(401).json({
+    
+    res.status(404).json({
       success: false,
-      message: "Semester does not Create Successfully",
+      message: (err as Error).message,
     });
   }
 };

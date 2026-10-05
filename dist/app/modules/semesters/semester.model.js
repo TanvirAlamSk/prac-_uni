@@ -20,5 +20,5 @@ const semesterSchema = new Schema({
         required: true,
     },
 });
-export const semester = model("semester", semesterSchema);
+export const Semester = model("Semester", semesterSchema);
 //# sourceMappingURL=semester.model.js.map

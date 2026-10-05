@@ -1,9 +1,9 @@
-import type { Semester } from "./semester.interface.js";
-export declare const semester: import("mongoose").Model<Semester, {}, {}, {}, import("mongoose").Document<unknown, {}, Semester, {}, import("mongoose").DefaultSchemaOptions> & Semester & {
+import type { SemesterType } from "./semester.interface.js";
+export declare const Semester: import("mongoose").Model<SemesterType, {}, {}, {}, import("mongoose").Document<unknown, {}, SemesterType, {}, import("mongoose").DefaultSchemaOptions> & SemesterType & {
     _id: import("mongoose").Types.ObjectId;
 } & {
     __v: number;
 } & {
     id: string;
-}, any, Semester>;
+}, any, SemesterType>;
 //# sourceMappingURL=semester.model.d.ts.map
