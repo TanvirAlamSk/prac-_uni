@@ -20,7 +20,7 @@ const semesterSchema = new Schema({
         required: true,
     },
 });
-semesterSchema.pre("save", async function (next) {
+semesterSchema.pre("save", async function () {
     const isExist = await Semester.findOne({
         name: this.name,
         year: this.year,
@@ -28,7 +28,6 @@ semesterSchema.pre("save", async function (next) {
     if (isExist) {
         throw new Error(`The ${this.name} semester of ${this.year} already created.`);
     }
-    // next();
 });
 export const Semester = model("Semester", semesterSchema);
 //# sourceMappingURL=semester.model.js.map

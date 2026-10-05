@@ -23,7 +23,7 @@ const semesterSchema = new Schema<SemesterType>({
   },
 });
 
-semesterSchema.pre("save", async function (next) {
+semesterSchema.pre("save", async function () {
   const isExist = await Semester.findOne({
     name: this.name,
     year: this.year,
@@ -34,8 +34,6 @@ semesterSchema.pre("save", async function (next) {
       `The ${this.name} semester of ${this.year} already created.`,
     );
   }
-
-  // next();
 });
 
 export const Semester = model<SemesterType>("Semester", semesterSchema);
