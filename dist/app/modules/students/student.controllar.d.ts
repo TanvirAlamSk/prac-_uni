@@ -1,4 +1,5 @@
-import { type Request, type Response } from "express";
-export declare const getStudentControllar: (req: Request, res: Response) => Promise<void>;
-export declare const creastStudentControllar: (req: Request, res: Response) => Promise<void>;
+import { type RequestHandler } from "express";
+export declare const getStudentControllar: RequestHandler;
+export declare const getStudentBySemesterDepartmentYearControllar: RequestHandler;
+export declare const creastStudentControllar: RequestHandler;
 //# sourceMappingURL=student.controllar.d.ts.map

@@ -22,13 +22,25 @@ const GuardianSchema = new Schema<Guardian>({
 });
 
 const studentSchema = new Schema<Student>({
-  id: {
-    type: Number,
-    required: [true, "ID must be required"],
-  },
   name: {
     type: nameSchema,
     required: true,
+  },
+  id: {
+    type: String,
+    required: [true, "ID must be required"],
+  },
+  year: {
+    type: Number,
+    required: true,
+  },
+  semester: {
+    type: String,
+    required: true,
+  },
+  department: {
+    type:String,
+    required:true,
   },
   dateOfBirth: {
     type: String,
