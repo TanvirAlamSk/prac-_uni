@@ -1,4 +1,8 @@
 import { Semester } from "./semester.model.js";
+export const getAllSemesterService = async () => {
+    const result = await Semester.find();
+    return result;
+};
 export const createSemesterService = async (data) => {
     // const { name, year } = data;
     // const filter = {
