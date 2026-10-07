@@ -1,3 +1,5 @@
+import type { Types } from "mongoose";
+
 export type Name={
         firstName:string;
         lastName:string;
@@ -13,8 +15,8 @@ export type Student={
     name:Name,
     id:string,
     year:number,
-    semester:string,
-    department:string,
+    semester:Types.ObjectId,
+    department:Types.ObjectId,
     dateOfBirth:string;
     address:string;
     gender:"male"|"female";

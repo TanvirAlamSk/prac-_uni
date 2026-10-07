@@ -1,8 +1,8 @@
 import {} from "express";
-import { getStudentBySemesterDepartmentYearService, getStudentservice, studentCreateService, } from "./student.service.js";
+import { getStudentBySemesterDepartmentYearService, getAllStudentservice, studentCreateService, } from "./student.service.js";
 export const getStudentControllar = async (req, res) => {
     try {
-        const result = await getStudentservice();
+        const result = await getAllStudentservice();
         res.status(200).json({
             success: true,
             message: "Successfully get all student.",

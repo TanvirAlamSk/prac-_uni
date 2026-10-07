@@ -2,8 +2,8 @@ import type { semesterDepartYear } from "../../utils/types.js";
 import { StudentModel } from "./student.schema.js";
 import type { Student } from "./students.interface.js";
 
-export const getStudentservice = async () => {
-  const result=await StudentModel.find();
+export const getAllStudentservice = async () => {
+  const result=await StudentModel.find().populate("semester").populate("department");
   return result;
 };
 

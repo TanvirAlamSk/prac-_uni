@@ -1,13 +1,13 @@
 import { type Request, type RequestHandler, type Response } from "express";
 import {
   getStudentBySemesterDepartmentYearService,
-  getStudentservice,
+  getAllStudentservice,
   studentCreateService,
 } from "./student.service.js";
 
 export const getStudentControllar: RequestHandler = async (req, res) => {
   try {
-    const result = await getStudentservice();
+    const result = await getAllStudentservice();
     res.status(200).json({
       success: true,
       message: "Successfully get all student.",

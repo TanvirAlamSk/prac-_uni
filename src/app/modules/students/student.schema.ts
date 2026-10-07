@@ -35,12 +35,14 @@ const studentSchema = new Schema<Student>({
     required: true,
   },
   semester: {
-    type: String,
-    required: true,
+    type: Schema.Types.ObjectId,
+    ref: "Semester",
+    required: [true,"Semester must be required"],
   },
   department: {
-    type:String,
-    required:true,
+    type:Schema.Types.ObjectId,
+    ref:"Department",
+    required:[true,"Department must be required"],
   },
   dateOfBirth: {
     type: String,

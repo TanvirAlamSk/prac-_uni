@@ -1,6 +1,6 @@
 import { StudentModel } from "./student.schema.js";
-export const getStudentservice = async () => {
-    const result = await StudentModel.find();
+export const getAllStudentservice = async () => {
+    const result = await StudentModel.find().populate("semester").populate("department");
     return result;
 };
 export const getStudentBySemesterDepartmentYearService = async (data) => {
