@@ -1,9 +1,8 @@
-import express from 'express'
-import { getAllFacultyControllar } from "./faculty.controllar.js";
-
-
+import express from "express";
+import { crateAFacultyControllar, getAllFacultyControllar } from "./faculty.controllar.js";
 const facultyRoute = express.Router();
 
 facultyRoute.get("", getAllFacultyControllar);
+facultyRoute.post("", crateAFacultyControllar);
 
 export default facultyRoute;

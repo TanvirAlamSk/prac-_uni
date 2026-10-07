@@ -25,9 +25,9 @@ export const crateAFacultyControllar = async (req, res) => {
         });
     }
     catch (err) {
-        res.status(200).json({
+        res.status(409).json({
             success: false,
-            message: "Create faculty unSuccessfully.",
+            message: err.message,
         });
     }
 };

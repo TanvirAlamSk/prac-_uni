@@ -7,6 +7,13 @@ export const getAllFacultyServices = async () => {
 };
 
 export const createAFacultySecvices = async (data: FacultyInterface) => {
+  const { name } = data;
+  const isExits = await faculty.findOne({ name });
+
+  if(isExits){
+    throw new Error(`${name} is already exists`)
+  }
+
   const result = await faculty.create(data);
   return result;
 };

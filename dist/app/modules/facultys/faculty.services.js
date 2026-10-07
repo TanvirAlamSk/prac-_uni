@@ -4,6 +4,11 @@ export const getAllFacultyServices = async () => {
     return result;
 };
 export const createAFacultySecvices = async (data) => {
+    const { name } = data;
+    const isExits = await faculty.findOne({ name });
+    if (isExits) {
+        throw new Error(`${name} is already exists`);
+    }
     const result = await faculty.create(data);
     return result;
 };

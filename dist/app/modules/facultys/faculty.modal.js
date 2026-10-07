@@ -5,5 +5,6 @@ const facultySchema = new Schema({
         required: [true, "Faculty name is required."],
     },
 });
+facultySchema.index({ name: 1 }, { unique: true });
 export const faculty = model("faculty", facultySchema);
 //# sourceMappingURL=faculty.modal.js.map
