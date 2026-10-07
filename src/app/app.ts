@@ -3,6 +3,7 @@ import cors from "cors";
 import studentRouter from "./modules/students/student.route.js";
 import semestrtRoute from "./modules/semesters/semester.route.js";
 import facultyRoute from "./modules/facultys/faculty.route.js";
+import departmentRoute from "./modules/departments/departments.route.js";
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(cors());
 app.use("/api/v1/students", studentRouter);
 app.use("/api/v1/semesters", semestrtRoute);
 app.use("/api/v1/faculties", facultyRoute);
+app.use("/api/v1/departments", departmentRoute);
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Server is running");

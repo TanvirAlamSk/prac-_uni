@@ -9,6 +9,7 @@ const departmentSchema = new Schema<DepartmentInterface>({
   faculty: {
     type: Schema.Types.ObjectId,
     ref: "Faculty",
+    required:[true,"Faculty reference must be required"]
   },
 });
 

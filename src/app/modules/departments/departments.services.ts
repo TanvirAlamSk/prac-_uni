@@ -6,14 +6,19 @@ export const getAllDepartmentsService = async () => {
   return result;
 };
 
-export const createADEpaetmentService = async (data: DepartmentInterface) => {
+export const createADepaetmentService = async (data: DepartmentInterface) => {
   const { name } = data;
-  const isExist = await Department.findOne({name});
+  const isExist = await Department.findOne({ name });
 
-  if(isExist){
-    throw new Error(`${name} department already created`)
+  if (isExist) {
+    throw new Error(`${name} department already created`);
   }
 
   const result = await Department.create(data);
   return result;
+};
+
+export const getOneDepartmentsService = async (id: string) => {
+    const result=await Department.findById(id).populate("faculty");
+    return result;
 };
