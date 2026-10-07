@@ -7,7 +7,7 @@ const departmentSchema = new Schema({
     faculty: {
         type: Schema.Types.ObjectId,
         ref: "Faculty",
-        required: [true, "Faculty reference must be required and is should bd exist facilty"]
+        required: [true, "Faculty reference must be required and is should be existing facilty"]
     },
 });
 departmentSchema.index({ name: 1 }, { unique: true });

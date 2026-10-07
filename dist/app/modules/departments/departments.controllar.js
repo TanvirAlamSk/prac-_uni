@@ -26,7 +26,7 @@ export const createADepartmentsControllar = async (req, res) => {
     }
     catch (err) {
         res.status(409).json({
-            success: true,
+            success: false,
             message: err.message,
         });
     }

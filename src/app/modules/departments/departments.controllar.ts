@@ -37,7 +37,7 @@ export const createADepartmentsControllar = async (
     });
   } catch (err) {
     res.status(409).json({
-      success: true,
+      success: false,
       message: (err as Error).message,
     });
   }
