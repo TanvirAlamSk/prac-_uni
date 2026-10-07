@@ -9,4 +9,4 @@ const facultySchema = new Schema<FacultyInterface>({
 });
 
 facultySchema.index({ name: 1 }, { unique: true });
-export const faculty = model<FacultyInterface>("faculty", facultySchema);
+export const Faculty = model<FacultyInterface>("Faculty", facultySchema);

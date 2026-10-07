@@ -6,5 +6,5 @@ const facultySchema = new Schema({
     },
 });
 facultySchema.index({ name: 1 }, { unique: true });
-export const faculty = model("faculty", facultySchema);
+export const Faculty = model("Faculty", facultySchema);
 //# sourceMappingURL=faculty.modal.js.map

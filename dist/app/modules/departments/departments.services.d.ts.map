@@ -1,1 +1,1 @@
-{"version":3,"file":"departments.services.d.ts","sourceRoot":"","sources":["../../../../src/app/modules/departments/departments.services.ts"],"names":[],"mappings":""}
+{"version":3,"file":"departments.services.d.ts","sourceRoot":"","sources":["../../../../src/app/modules/departments/departments.services.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,mBAAmB,EAAE,MAAM,4BAA4B,CAAC;AAGtE,eAAO,MAAM,wBAAwB;;;;;;KAGpC,CAAC;AAEF,eAAO,MAAM,wBAAwB,GAAU,MAAM,mBAAmB;;;;;;EAUvE,CAAC"}
