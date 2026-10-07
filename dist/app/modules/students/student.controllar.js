@@ -1,5 +1,5 @@
 import {} from "express";
-import { getStudentBySemesterDepartmentYearService, getAllStudentservice, studentCreateService, } from "./student.service.js";
+import { getStudentBySemesterDepartmentYearService, getAllStudentservice, createAStudentService, } from "./student.service.js";
 export const getStudentControllar = async (req, res) => {
     try {
         const result = await getAllStudentservice();
@@ -40,9 +40,9 @@ export const getStudentBySemesterDepartmentYearControllar = async (req, res) => 
         });
     }
 };
-export const creastStudentControllar = async (req, res) => {
+export const creastAStudentControllar = async (req, res) => {
     try {
-        const result = await studentCreateService(req.body);
+        const result = await createAStudentService(req.body);
         res.status(201).json({
             success: true,
             message: "Successfully Student created",
@@ -52,8 +52,7 @@ export const creastStudentControllar = async (req, res) => {
     catch (err) {
         res.status(400).json({
             success: false,
-            message: "Student created failed",
-            data: err,
+            message: err.message
         });
     }
 };

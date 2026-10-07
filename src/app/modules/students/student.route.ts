@@ -1,6 +1,6 @@
 import express from "express";
 import {
-  creastStudentControllar,
+  creastAStudentControllar,
   getStudentBySemesterDepartmentYearControllar,
   getStudentControllar,
 } from "./student.controllar.js";
@@ -13,7 +13,7 @@ studentRouter.get(
   "/count-student",
   getStudentBySemesterDepartmentYearControllar,
 );
-studentRouter.post("", creastStudentControllar);
+studentRouter.post("", creastAStudentControllar);
 
 
 export default studentRouter;

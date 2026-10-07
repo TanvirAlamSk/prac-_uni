@@ -6,7 +6,7 @@ export declare const getAllStudentservice: () => Promise<(import("mongoose").Doc
     __v: number;
 })[]>;
 export declare const getStudentBySemesterDepartmentYearService: (data: semesterDepartYear) => Promise<number>;
-export declare const studentCreateService: (data: Student) => Promise<import("mongoose").Document<unknown, {}, Student, {}, import("mongoose").DefaultSchemaOptions> & Student & {
+export declare const createAStudentService: (data: Student) => Promise<import("mongoose").Document<unknown, {}, Student, {}, import("mongoose").DefaultSchemaOptions> & Student & {
     _id: import("mongoose").Types.ObjectId;
 } & {
     __v: number;
