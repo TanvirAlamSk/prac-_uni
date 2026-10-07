@@ -36,4 +36,6 @@ semesterSchema.pre("save", async function () {
   }
 });
 
+// Semester.index({})
+
 export const Semester = model<SemesterType>("Semester", semesterSchema);

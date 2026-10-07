@@ -1,10 +1,10 @@
 import express from "express";
-import { createSemesterControllar } from "./semester.controllar.js";
+import { createSemesterControllar, getAllSemesterControllar } from "./semester.controllar.js";
 
 const semestrtRoute = express.Router();
 
 
-semestrtRoute.get("")
-semestrtRoute.post("/create-semester", createSemesterControllar);
+semestrtRoute.get("",getAllSemesterControllar)
+semestrtRoute.post("", createSemesterControllar);
 
 export default semestrtRoute;

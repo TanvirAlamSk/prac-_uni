@@ -7,13 +7,13 @@ import {
 
 const studentRouter = express.Router();
 
-studentRouter.get("", getStudentControllar);
 
+studentRouter.get("", getStudentControllar);
 studentRouter.get(
   "/count-student",
   getStudentBySemesterDepartmentYearControllar,
 );
+studentRouter.post("", creastStudentControllar);
 
-studentRouter.post("/create-student", creastStudentControllar);
 
 export default studentRouter;

@@ -3,6 +3,6 @@ import { creastStudentControllar, getStudentBySemesterDepartmentYearControllar, 
 const studentRouter = express.Router();
 studentRouter.get("", getStudentControllar);
 studentRouter.get("/count-student", getStudentBySemesterDepartmentYearControllar);
-studentRouter.post("/create-student", creastStudentControllar);
+studentRouter.post("", creastStudentControllar);
 export default studentRouter;
 //# sourceMappingURL=student.route.js.map

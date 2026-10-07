@@ -29,5 +29,6 @@ semesterSchema.pre("save", async function () {
         throw new Error(`The ${this.name} semester of ${this.year} already created.`);
     }
 });
+// Semester.index({})
 export const Semester = model("Semester", semesterSchema);
 //# sourceMappingURL=semester.model.js.map
