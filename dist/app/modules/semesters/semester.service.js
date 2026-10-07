@@ -4,6 +4,11 @@ export const getAllSemesterService = async () => {
     return result;
 };
 export const createSemesterService = async (data) => {
+    const { year, name } = data;
+    const isExist = await Semester.findOne({ name, year });
+    if (isExist) {
+        throw new Error(`The ${name} semester of ${year} is already exist.`);
+    }
     const result = await Semester.create(data);
     return result;
 };

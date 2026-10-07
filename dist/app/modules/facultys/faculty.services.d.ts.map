@@ -1,1 +1,1 @@
-{"version":3,"file":"faculty.services.d.ts","sourceRoot":"","sources":["../../../../src/app/modules/facultys/faculty.services.ts"],"names":[],"mappings":"AAEA,eAAO,MAAM,qBAAqB;;;;;;KAGjC,CAAC"}
+{"version":3,"file":"faculty.services.d.ts","sourceRoot":"","sources":["../../../../src/app/modules/facultys/faculty.services.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,gBAAgB,EAAE,MAAM,wBAAwB,CAAC;AAG/D,eAAO,MAAM,qBAAqB;;;;;;KAGjC,CAAC;AAEF,eAAO,MAAM,sBAAsB,GAAU,MAAM,gBAAgB;;;;;;EAGlE,CAAC"}
